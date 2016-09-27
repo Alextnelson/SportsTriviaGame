@@ -1,0 +1,206 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<array>
+	<dict>
+		<key>description</key>
+		<string>In this first-ever rematch of the World Series, the Chicago Cubs won in five games for their second consecutive and overall World Series title</string>
+		<key>year</key>
+		<string>1908</string>
+		<key>url</key>
+		<string>https://en.wikipedia.org/wiki/1908_World_Series</string>
+	</dict>
+	<dict>
+		<key>description</key>
+		<string> The Buffalo Sabres bust out for nine goals in the second period. Center Gil Perreault leads the onslaught with a hat trick as the Sabres set an NHL record for most goals in a period.</string>
+		<key>year</key>
+		<string>1981</string>
+		<key>url</key>
+		<string>http://www.espn.com/classic/s/moment010319sabres.html</string>
+	</dict>
+	<dict>
+		<key>description</key>
+		<string>Wilt Chamberlain set the single-game scoring record in the National Basketball Association (NBA) by scoring 100 points for the Philadelphia Warriors in a 169–147 win over the New York Knicks</string>
+		<key>year</key>
+		<string>1962</string>
+		<key>url</key>
+		<string>https://en.wikipedia.org/wiki/Wilt_Chamberlain%27s_100-point_game</string>
+	</dict>
+	<dict>
+		<key>description</key>
+		<string>Romanian Nadia Comăneci becomes the first person to score a perfect 10 at the Olympic Games accomplishing the feat in Montreal</string>
+		<key>year</key>
+		<string>1976</string>
+		<key>url</key>
+		<string>https://en.wikipedia.org/wiki/Perfect_10_(gymnastics)</string>
+	</dict>
+	<dict>
+		<key>description</key>
+		<string>Gertrude Ederle becomes the first woman to swim the 21 miles from Dover, England, to Cape Griz-Nez across the English Channel, which separates Great Britain from the northwestern tip of France.</string>
+		<key>year</key>
+		<string>1926</string>
+		<key>url</key>
+		<string>http://www.history.com/this-day-in-history/gertrude-ederle-becomes-first-woman-to-swim-english-channel</string>
+	</dict>
+	<dict>
+		<key>description</key>
+		<string>Sir Barton win ths Kentucky Derby, the Preakness Stakes and the Belmont Stakes completing the first Triple Crown in U.S. history</string>
+		<key>year</key>
+		<string>1919</string>
+		<key>url</key>
+		<string>https://en.wikipedia.org/wiki/Sir_Barton</string>
+	</dict>
+	<dict>
+		<key>description</key>
+		<string>21-year-old Tiger Woods wins the prestigious Masters Tournament by a record 12 strokes in Augusta, Georgia and earns his first golf major championship</string>
+		<key>year</key>
+		<string>1997</string>
+		<key>url</key>
+		<string>http://www.history.com/this-day-in-history/tiger-woods-wins-first-major</string>
+	</dict>
+	<dict>
+		<key>description</key>
+		<string>The shot clock first came to use in Syracuse, New York, where Syracuse Nationals owner Danny Biasone and general manager Leo Ferris experimented using a 24-second version during a scrimmage game.</string>
+		<key>year</key>
+		<string>1954</string>
+		<key>url</key>
+		<string>https://en.wikipedia.org/wiki/Shot_clock</string>
+	</dict>
+	<dict>
+		<key>description</key>
+		<string>the Boston Red Sox’s Ted Williams plays a double-header against the Philadelphia Athletics on the last day of the regular season and gets six hits in eight trips to the plate, to boost his batting average to .406 and become the first player since Bill Terry in 1930 </string>
+		<key>year</key>
+		<string>1941</string>
+		<key>url</key>
+		<string>http://www.history.com/this-day-in-history/ted-williams-becomes-last-player-to-hit-400</string>
+	</dict>
+	<dict>
+		<key>description</key>
+		<string> New York Yankee Roger Maris becomes the first-ever major-league baseball player to hit more than 60 home runs in a single season. </string>
+		<key>year</key>
+		<string>1961</string>
+		<key>url</key>
+		<string>http://www.history.com/this-day-in-history/roger-maris-breaks-home-run-record</string>
+	</dict>
+	<dict>
+		<key>description</key>
+		<string>Chess grandmaster Garry Kasparov resigns after 19 moves in a game against Deep Blue, a chess-playing computer developed by scientists at IBM. This was the sixth and final game of their match, which Kasparov lost two games to one, with three draws.</string>
+		<key>year</key>
+		<string>1997</string>
+		<key>url</key>
+		<string>http://www.history.com/this-day-in-history/deep-blue-defeats-garry-kasparov-in-chess-match</string>
+	</dict>
+	<dict>
+		<key>description</key>
+		<string>40-year-old Arizona Diamondbacks lefthander Randy Johnson becomes the oldest pitcher in major league history to throw a perfect game,</string>
+		<key>year</key>
+		<string>2004</string>
+		<key>url</key>
+		<string>http://www.history.com/this-day-in-history/randy-johnson-throws-perfect-game-at-40</string>
+	</dict>
+	<dict>
+		<key>description</key>
+		<string>The Cincinnati Reds beat the Philadelphia Phillies 2-1 on this night in Major League Baseball’s first-ever night game</string>
+		<key>year</key>
+		<string>1935</string>
+		<key>url</key>
+		<string>http://www.history.com/this-day-in-history/mlb-holds-first-night-game</string>
+	</dict>
+	<dict>
+		<key>description</key>
+		<string>On May 30, the inaugural Indianapolis 500 is run at the Indianapolis Motor Speedway in Indiana</string>
+		<key>year</key>
+		<string>1911</string>
+		<key>url</key>
+		<string>http://www.history.com/this-day-in-history/first-indianapolis-500-is-run</string>
+	</dict>
+	<dict>
+		<key>description</key>
+		<string>The rival National Football League (NFL) and American Football League (AFL) announce that they will merge. The first “Super Bowl” between the two leagues took place at the end of that year&apos;s season</string>
+		<key>year</key>
+		<string>1966</string>
+		<key>url</key>
+		<string>http://www.history.com/this-day-in-history/nfl-and-afl-announce-merger</string>
+	</dict>
+	<dict>
+		<key>description</key>
+		<string>15-year-old Joe Nuxhall becomes the youngest person ever to play Major League Baseball when he pitches in a game for the Cincinnati Reds. Nuxhall threw two-thirds of the ninth inning in an 18-0 loss to the St. Louis Cardinals</string>
+		<key>year</key>
+		<string>1944</string>
+		<key>url</key>
+		<string>http://www.history.com/this-day-in-history/joe-nuxhall-makes-mlb-debut-at-15</string>
+	</dict>
+	<dict>
+		<key>description</key>
+		<string>Cincinnati Red Johnny Vander Meer pitches his second consecutive no-hit, no-run game. Vander Meer is the only pitcher in baseball history to throw two back-to-back no-hitters.</string>
+		<key>year</key>
+		<string>1938</string>
+		<key>url</key>
+		<string>http://www.history.com/this-day-in-history/vander-meer-pitches-second-consecutive-no-hitter</string>
+	</dict>
+	<dict>
+		<key>description</key>
+		<string>Arthur Ashe defeats the heavily favored Jimmy Connors to become the first black man ever to win Wimbledon, the most coveted championship in tennis.</string>
+		<key>year</key>
+		<string>1975</string>
+		<key>url</key>
+		<string>http://www.history.com/this-day-in-history/ashe-becomes-first-black-man-to-win-wimbledon</string>
+	</dict>
+	<dict>
+		<key>description</key>
+		<string>Major League Baseball’s first All-Star Game took place at Chicago’s Comiskey Park. </string>
+		<key>year</key>
+		<string>1933</string>
+		<key>url</key>
+		<string>http://www.history.com/this-day-in-history/major-league-baseballs-first-all-star-game-is-held</string>
+	</dict>
+	<dict>
+		<key>description</key>
+		<string> France defeats favored Brazil 3-0 to win the FIFA World Cup at Stade de France in Saint Denis to win the country’s first-ever World Cup title.</string>
+		<key>year</key>
+		<string>1998</string>
+		<key>url</key>
+		<string>http://www.history.com/this-day-in-history/france-beats-brazil-to-win-fifa-world-cup</string>
+	</dict>
+	<dict>
+		<key>description</key>
+		<string>In the first World Cup final, held on July 30th, 93,000 spectators looked on as Uruguay defeated Argentina 4–2 in a rematch of a previous Olympic gold medal game.</string>
+		<key>year</key>
+		<string>1930</string>
+		<key>url</key>
+		<string>http://www.history.com/this-day-in-history/first-world-cup</string>
+	</dict>
+	<dict>
+		<key>description</key>
+		<string>Jackie Joyner-Kersee becomes the first woman ever to win two consecutive Olympic gold medals in the heptathlon.</string>
+		<key>year</key>
+		<string>1992</string>
+		<key>url</key>
+		<string>http://www.history.com/this-day-in-history/jackie-joyner-kersee-wins-gold-in-heptathlon-again</string>
+	</dict>
+	<dict>
+		<key>description</key>
+		<string>Indoor ice hockey makes its public debut in Montreal, Quebec at the Victoria Skating Rink.</string>
+		<key>year</key>
+		<string>1875</string>
+		<key>url</key>
+		<string>http://www.history.com/this-day-in-history/first-indoor-game-of-ice-hockey</string>
+	</dict>
+	<dict>
+		<key>description</key>
+		<string>Boston Bruin Bobby Orr becomes the first defenseman in NHL history to score 100 points in a season, after scoring four goals in one game against the Detroit Red Wings. </string>
+		<key>year</key>
+		<string>1970</string>
+		<key>url</key>
+		<string>http://www.history.com/this-day-in-history/bobby-orr-scores-100-points-in-one-season</string>
+	</dict>
+	<dict>
+		<key>description</key>
+		<string>The University of Oregon defeats The Ohio State University 46–33 to win the first-ever NCAA men’s basketball tournament.</string>
+		<key>year</key>
+		<string>1939</string>
+		<key>url</key>
+		<string>http://www.history.com/this-day-in-history/march-madness-is-born</string>
+	</dict>
+</array>
+</plist>
