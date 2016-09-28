@@ -1,5 +1,5 @@
 //
-//  TriviaQuestions.swift
+//  SportsTriviaQuestions.swift
 //  SportsTriviaGame
 //
 //  Created by Alexander Nelson on 9/19/16.
@@ -28,7 +28,11 @@ class SportsTrivia {
 }
 
 struct GameOfSportsTrivia {
-    var allSportsTriviaOptions: [SportsTrivia]
+    var sportsTriviaOptions: [SportsTrivia]
+
+    init(sportsTrivia: [SportsTrivia]) {
+        self.sportsTriviaOptions = sportsTrivia
+    }
 }
 
 class PlistConverter {

@@ -7,10 +7,10 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
+        <!--Sports Trivia View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="SportsTriviaGame" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="SportsTriviaViewController" customModule="SportsTriviaGame" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
                         <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
@@ -30,7 +30,7 @@
                                 <color key="textColor" red="0.21960784310000001" green="0.56470588239999997" blue="0.70196078429999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="TIME" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LY0-Ec-461">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="00:60" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LY0-Ec-461">
                                 <fontDescription key="fontDescription" type="system" pointSize="24"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <nil key="highlightedColor"/>
@@ -56,16 +56,22 @@
                                 <color key="backgroundColor" red="1" green="0.5" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <state key="normal" image="down_full"/>
                                 <connections>
-                                    <action selector="swapLabels:" destination="BYZ-38-t0r" eventType="touchUpInside" id="5hY-nq-y07"/>
+                                    <action selector="changeLabels:" destination="BYZ-38-t0r" eventType="touchUpInside" id="PZV-ex-gik"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Rek-Sz-omp">
                                 <color key="backgroundColor" red="1" green="0.5" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <state key="normal" image="up_half"/>
+                                <connections>
+                                    <action selector="changeLabels:" destination="BYZ-38-t0r" eventType="touchUpInside" id="lrz-wa-7eT"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="RZl-gA-mJm">
                                 <color key="backgroundColor" red="1" green="0.5" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <state key="normal" image="down_half"/>
+                                <connections>
+                                    <action selector="changeLabels:" destination="BYZ-38-t0r" eventType="touchUpInside" id="ngG-A0-IP2"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="wordWrap" translatesAutoresizingMaskIntoConstraints="NO" id="Tss-Io-YGW">
                                 <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
@@ -80,10 +86,16 @@
                                     <constraint firstAttribute="height" constant="50" id="Tix-OL-aa4"/>
                                 </constraints>
                                 <state key="normal" image="up_half"/>
+                                <connections>
+                                    <action selector="changeLabels:" destination="BYZ-38-t0r" eventType="touchUpInside" id="au0-99-ERx"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="REQ-3z-pTM">
                                 <color key="backgroundColor" red="1" green="0.5" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <state key="normal" image="down_half"/>
+                                <connections>
+                                    <action selector="changeLabels:" destination="BYZ-38-t0r" eventType="touchUpInside" id="5MI-HN-6En"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="wordWrap" translatesAutoresizingMaskIntoConstraints="NO" id="O4q-aY-Iwl">
                                 <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
@@ -95,6 +107,9 @@
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="oCD-xI-15O">
                                 <color key="backgroundColor" red="1" green="0.5" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <state key="normal" image="up_full"/>
+                                <connections>
+                                    <action selector="changeLabels:" destination="BYZ-38-t0r" eventType="touchUpInside" id="sXr-lS-dH0"/>
+                                </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="5" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="EUL-Hd-VjG">
                                 <constraints>
@@ -136,6 +151,23 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Xu5-ha-bF5">
+                                <frame key="frameInset" minX="267" minY="587" width="69" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.5" green="0.0" blue="0.5" alpha="1" colorSpace="calibratedRGB"/>
+                                <state key="normal" title="Test"/>
+                                <connections>
+                                    <action selector="testCheckAnswer:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Sqm-OR-myU"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bpM-Fk-eJy">
+                                <frame key="frameInset" minX="113" minY="584" width="146" height="34"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="End Round"/>
+                                <connections>
+                                    <action selector="startNextRound:" destination="BYZ-38-t0r" eventType="touchUpInside" id="0BX-MR-lzd"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" red="0.0" green="0.16470588235294117" blue="0.29019607843137252" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
@@ -206,7 +238,14 @@
                         <outlet property="eventLabelOne" destination="EUL-Hd-VjG" id="1hM-qI-hRT"/>
                         <outlet property="eventLabelThree" destination="pwS-70-TaJ" id="h3W-fx-cRt"/>
                         <outlet property="eventLabelTwo" destination="tgj-NO-LIz" id="UpO-Ca-q9i"/>
+                        <outlet property="fullDownButton" destination="TII-Lt-0Yt" id="CUX-ke-58M"/>
+                        <outlet property="fullUpButton" destination="oCD-xI-15O" id="K6T-CW-VxL"/>
+                        <outlet property="halfDownButtonOne" destination="RZl-gA-mJm" id="bXd-7q-Ntg"/>
+                        <outlet property="halfDownButtonTwo" destination="REQ-3z-pTM" id="arx-pT-3wK"/>
+                        <outlet property="halfUpButtonOne" destination="Rek-Sz-omp" id="eU7-Lp-ppY"/>
+                        <outlet property="halfUpButtonTwo" destination="SfN-2c-eZ6" id="o86-76-5Wu"/>
                         <outlet property="instructionLabel" destination="q76-Dt-wwz" id="DI7-qr-Cig"/>
+                        <outlet property="nextRoundButton" destination="bpM-Fk-eJy" id="uVv-cV-bFx"/>
                         <outlet property="shakeToCompleteInstructions" destination="zQc-4C-g20" id="ekU-7x-fYL"/>
                         <outlet property="timerLabel" destination="LY0-Ec-461" id="wqb-fo-WuB"/>
                     </connections>
