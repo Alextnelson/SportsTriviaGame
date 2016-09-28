@@ -27,6 +27,10 @@ class SportsTrivia {
     }
 }
 
+struct GameOfSportsTrivia {
+    var allSportsTriviaOptions: [SportsTrivia]
+}
+
 class PlistConverter {
     class func arrayFromFile(resource: String, ofType type: String) throws -> [[String : String]] {
 

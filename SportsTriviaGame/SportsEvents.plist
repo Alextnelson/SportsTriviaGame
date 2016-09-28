@@ -68,7 +68,7 @@
 	</dict>
 	<dict>
 		<key>description</key>
-		<string>the Boston Red Sox’s Ted Williams plays a double-header against the Philadelphia Athletics on the last day of the regular season and gets six hits in eight trips to the plate, to boost his batting average to .406 and become the first player since Bill Terry in 1930 </string>
+		<string>The Boston Red Sox’s Ted Williams gets six hits in eight trips to the plate on the last day of the regular season to boost his batting average to .406 and become the first player since Bill Terry in 1930. </string>
 		<key>year</key>
 		<string>1941</string>
 		<key>url</key>
@@ -76,7 +76,7 @@
 	</dict>
 	<dict>
 		<key>description</key>
-		<string> New York Yankee Roger Maris becomes the first-ever major-league baseball player to hit more than 60 home runs in a single season. </string>
+		<string>New York Yankee Roger Maris becomes the first-ever major-league baseball player to hit more than 60 home runs in a single season. </string>
 		<key>year</key>
 		<string>1961</string>
 		<key>url</key>

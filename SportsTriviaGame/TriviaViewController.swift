@@ -17,6 +17,11 @@ class ViewController: UIViewController {
     @IBOutlet weak var timerLabel: UILabel!
     @IBOutlet weak var instructionLabel: UILabel!
     @IBOutlet weak var shakeToCompleteInstructions: UILabel!
+    @IBOutlet weak var eventLabelOne: UILabel!
+    @IBOutlet weak var eventLabelTwo: UILabel!
+    @IBOutlet weak var eventLabelThree: UILabel!
+    
+    @IBOutlet weak var eventLabelFour: UILabel!
 
     @IBOutlet weak var eventButtonOne: UIButton!
     @IBOutlet weak var eventButtonTwo: UIButton!
@@ -25,6 +30,7 @@ class ViewController: UIViewController {
 
     var sportsTriviaQuiz: [SportsTrivia]
     var eventButtons: [UIButton] = []
+    var eventLabels: [UILabel] = []
 
     let roundsPerGame = 6
     let eventsPerRound = 4
@@ -54,28 +60,38 @@ class ViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        startNewRound()
+        startNewRound(trivia: self.sportsTriviaQuiz)
+
     }
 
-    func startNewRound() {
-        let newRoundOfTrivia = createSportsTriviaOptions(trivia: self.sportsTriviaQuiz)
-        _ = sortedTrivia(trivia: newRoundOfTrivia)
-        _ = setUpEventButtons(trivia: newRoundOfTrivia)
+    func startNewRound(trivia: [SportsTrivia]) {
+        let newRoundOfTrivia = createSportsTriviaOptions(trivia: trivia)
+        self.eventLabels = setUpEventLabels(trivia: newRoundOfTrivia)
     }
+
+    @IBAction func swapLabels(_ sender: AnyObject) {
+        swap(&eventLabels[0].text, &eventLabels[1].text)
+
+    }
+
+    func swapElements(fromIndex: Int, toIndex: Int) {
+        swap(&eventLabels[fromIndex].text, &eventLabels[toIndex].text)
+    }
+
 
     // MARK: Helper methods
 
-    func setUpEventButtons(trivia: [SportsTrivia]) -> [UIButton] {
+    func setUpEventLabels(trivia: [SportsTrivia]) -> [UILabel] {
         var triviaTitles = [String]()
         for event in trivia {
             triviaTitles.append(event.description)
         }
 
-        eventButtons = [eventButtonOne, eventButtonTwo, eventButtonThree, eventButtonFour]
-        for button in eventButtons {
-            button.setTitle(triviaTitles.removeLast(), for: .normal)
+        eventLabels = [eventLabelOne, eventLabelTwo, eventLabelThree, eventLabelFour]
+        for label in eventLabels {
+            label.text = triviaTitles.removeLast()
         }
-        return eventButtons
+        return eventLabels
     }
 
 
@@ -94,6 +110,10 @@ class ViewController: UIViewController {
 
     func sortedTrivia(trivia: [SportsTrivia]) -> [SportsTrivia] {
         return trivia.sorted { $0.year < $1.year }
+    }
+
+    func checkAnswer(trivia: [SportsTrivia]) -> Bool {
+        return true
     }
 
 
