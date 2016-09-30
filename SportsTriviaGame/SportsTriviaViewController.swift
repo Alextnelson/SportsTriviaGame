@@ -37,6 +37,7 @@ class SportsTriviaViewController: UIViewController {
 
     @IBOutlet weak var nextRoundButton: UIButton!
 
+
     var allSportsTrivia: GameOfSportsTrivia
     var roundOfSportsTrivia = GameOfSportsTrivia(sportsTrivia: [])
     var sortedSportsTrivia = GameOfSportsTrivia(sportsTrivia: [])
@@ -107,7 +108,6 @@ class SportsTriviaViewController: UIViewController {
         case fullUpButton, halfDownButtonTwo: swapElements(fromIndex: 3, toIndex: 2)
         default: break
         }
-
     }
 
     func setUpEventLabels(trivia: GameOfSportsTrivia) {
@@ -174,6 +174,8 @@ class SportsTriviaViewController: UIViewController {
         }
     }
 
+    // MARK: Segue for Web view
+
     @IBAction func presentWebViewOne(_ sender: AnyObject) {
         performSegue(withIdentifier: "webViewSegueOne", sender: self)
     }
@@ -189,7 +191,18 @@ class SportsTriviaViewController: UIViewController {
     @IBAction func presentWebViewFour(_ sender: AnyObject) {
         performSegue(withIdentifier: "webViewSegueFour", sender: self)
     }
-    
+
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if segue.identifier == "webViewSegueOne", let wvc = segue.destination as? WebViewController {
+            wvc.url = sortedSportsTrivia.sportsTriviaOptions[0].url
+        } else if segue.identifier == "webViewSegueTwo", let wvc = segue.destination as? WebViewController {
+            wvc.url = sortedSportsTrivia.sportsTriviaOptions[1].url
+        } else if segue.identifier == "webViewSegueThree", let wvc = segue.destination as? WebViewController {
+            wvc.url = sortedSportsTrivia.sportsTriviaOptions[2].url
+        } else if segue.identifier == "webViewSegueFour", let wvc = segue.destination as? WebViewController {
+            wvc.url = sortedSportsTrivia.sportsTriviaOptions[3].url
+        }
+    }
 
 
     // MARK: Helper methods
@@ -240,19 +253,6 @@ class SportsTriviaViewController: UIViewController {
         eventLabelFour.text = sortedSportsTrivia.sportsTriviaOptions[3].description
     }
 
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        if segue.identifier == "webViewSegueOne", let wvc = segue.destination as? WebViewController {
-            wvc.url = sortedSportsTrivia.sportsTriviaOptions[0].url
-        } else if segue.identifier == "webViewSegueTwo", let wvc = segue.destination as? WebViewController {
-            wvc.url = sortedSportsTrivia.sportsTriviaOptions[1].url
-        } else if segue.identifier == "webViewSegueThree", let wvc = segue.destination as? WebViewController {
-            wvc.url = sortedSportsTrivia.sportsTriviaOptions[2].url
-        } else if segue.identifier == "webViewSegueFour", let wvc = segue.destination as? WebViewController {
-            wvc.url = sortedSportsTrivia.sportsTriviaOptions[3].url
-        }
-    }
-
-
 // MARK: Timer methods
 
     func beginTimer() {
@@ -284,16 +284,5 @@ class SportsTriviaViewController: UIViewController {
     }
 }
 
-//            switch UIButton() {
-//            case eventButtonOne: wvc.url = sortedSportsTrivia.sportsTriviaOptions[0].url
-//            case eventButtonTwo: wvc.url = sortedSportsTrivia.sportsTriviaOptions[1].url
-//            case eventButtonThree: wvc.url = sortedSportsTrivia.sportsTriviaOptions[2].url
-//            case eventButtonFour: wvc.url = sortedSportsTrivia.sportsTriviaOptions[3].url
-//            default: break
-//            }
-
-//@IBAction func learnMoreAboutEvents(_ sender: UIButton) {
-//    performSegue(withIdentifier: "webViewSegue", sender: self)
-//}
 
 
