@@ -23,22 +23,23 @@
                                 <frame key="frameInset" minX="164" minY="94" width="47" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </stackView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Shake to complete" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zQc-4C-g20">
-                                <frame key="frameInset" minX="116.5" minY="626.5" width="142.5" height="20.5"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Order the events chronologically" textAlignment="center" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="q76-Dt-wwz">
+                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Shake to complete" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zQc-4C-g20">
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" red="0.21960784310000001" green="0.56470588239999997" blue="0.70196078429999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="00:30" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LY0-Ec-461">
-                                <frame key="frameInset" minX="144.5" minY="579.5" width="86" height="38.5"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="00:30" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LY0-Ec-461">
                                 <fontDescription key="fontDescription" type="system" weight="light" pointSize="32"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="wordWrap" translatesAutoresizingMaskIntoConstraints="NO" id="zQP-5Y-Hyh">
-                                <frame key="frameInset" minX="16" minY="93.5" width="309" height="100"/>
+                                <frame key="frameInset" minX="16" minY="94" width="309" height="100"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="12"/>
@@ -51,7 +52,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="wordWrap" translatesAutoresizingMaskIntoConstraints="NO" id="mg1-uc-USn">
-                                <frame key="frameInset" minX="16" minY="336" width="309" height="99"/>
+                                <frame key="frameInset" minX="16" minY="337" width="309" height="100"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="12"/>
@@ -64,7 +65,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="TII-Lt-0Yt">
-                                <frame key="frameInset" minX="325" minY="93.5" width="34" height="100"/>
+                                <frame key="frameInset" minX="325" minY="94" width="34" height="100"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" red="1" green="0.5" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <state key="normal" image="down_full"/>
@@ -73,7 +74,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Rek-Sz-omp">
-                                <frame key="frameInset" minX="325" minY="211.5" width="34" height="50.5"/>
+                                <frame key="frameInset" minX="325" minY="212" width="34" height="50"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" red="1" green="0.5" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <state key="normal" image="up_half"/>
@@ -81,17 +82,8 @@
                                     <action selector="changeLabels:" destination="BYZ-38-t0r" eventType="touchUpInside" id="lrz-wa-7eT"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="RZl-gA-mJm">
-                                <frame key="frameInset" minX="325" minY="262" width="34" height="49"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" red="1" green="0.5" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
-                                <state key="normal" image="down_half"/>
-                                <connections>
-                                    <action selector="changeLabels:" destination="BYZ-38-t0r" eventType="touchUpInside" id="ngG-A0-IP2"/>
-                                </connections>
-                            </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="wordWrap" translatesAutoresizingMaskIntoConstraints="NO" id="Tss-Io-YGW">
-                                <frame key="frameInset" minX="16" minY="211.5" width="309" height="99.5"/>
+                                <frame key="frameInset" minX="16" minY="212" width="309" height="100"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="12"/>
@@ -104,7 +96,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="SfN-2c-eZ6">
-                                <frame key="frameInset" minX="325" minY="336" width="34" height="50"/>
+                                <frame key="frameInset" minX="325" minY="337" width="34" height="50"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" red="1" green="0.5" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <state key="normal" image="up_half"/>
@@ -113,7 +105,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="REQ-3z-pTM">
-                                <frame key="frameInset" minX="325" minY="386" width="34" height="49"/>
+                                <frame key="frameInset" minX="325" minY="387" width="34" height="50"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" red="1" green="0.5" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <state key="normal" image="down_half"/>
@@ -122,7 +114,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="wordWrap" translatesAutoresizingMaskIntoConstraints="NO" id="O4q-aY-Iwl">
-                                <frame key="frameInset" minX="16" minY="459" width="309" height="100"/>
+                                <frame key="frameInset" minX="16" minY="460" width="309" height="100"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="12"/>
@@ -135,7 +127,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="oCD-xI-15O">
-                                <frame key="frameInset" minX="325" minY="459" width="34" height="100"/>
+                                <frame key="frameInset" minX="325" minY="460" width="34" height="100"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" red="1" green="0.5" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <state key="normal" image="up_full"/>
@@ -144,7 +136,7 @@
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="5" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="EUL-Hd-VjG">
-                                <frame key="frameInset" minX="30" minY="102.5" width="281" height="82"/>
+                                <frame key="frameInset" minX="30" minY="103" width="281" height="82"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <string key="text"> France defeats favored Brazil 3-0 to win the FIFA World Cup at Stade de France in Saint Denis to win the country’s first-ever World Cup title.</string>
                                 <fontDescription key="fontDescription" type="system" pointSize="12"/>
@@ -152,7 +144,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="5" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tgj-NO-LIz">
-                                <frame key="frameInset" minX="31" minY="220.5" width="281" height="82"/>
+                                <frame key="frameInset" minX="31" minY="221" width="281" height="82"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <string key="text"> France defeats favored Brazil 3-0 to win the FIFA World Cup at Stade de France in Saint Denis to win the country’s first-ever World Cup title.</string>
                                 <fontDescription key="fontDescription" type="system" pointSize="12"/>
@@ -160,7 +152,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="5" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pwS-70-TaJ">
-                                <frame key="frameInset" minX="31" minY="344.5" width="281" height="82"/>
+                                <frame key="frameInset" minX="31" minY="345" width="281" height="82"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <string key="text"> France defeats favored Brazil 3-0 to win the FIFA World Cup at Stade de France in Saint Denis to win the country’s first-ever World Cup title.</string>
                                 <fontDescription key="fontDescription" type="system" pointSize="12"/>
@@ -168,30 +160,44 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="5" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hiJ-RM-1tc">
-                                <frame key="frameInset" minX="36" minY="468" width="281" height="82"/>
+                                <frame key="frameInset" minX="36" minY="469" width="281" height="82"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <string key="text"> France defeats favored Brazil 3-0 to win the FIFA World Cup at Stade de France in Saint Denis to win the country’s first-ever World Cup title.</string>
                                 <fontDescription key="fontDescription" type="system" pointSize="12"/>
                                 <color key="textColor" red="0.12549019607843137" green="0.37254901960784315" blue="0.49019607843137253" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bpM-Fk-eJy">
-                                <frame key="frameInset" minX="113" minY="584" width="146" height="34"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bpM-Fk-eJy">
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="34" id="QEK-28-JlO"/>
+                                    <constraint firstAttribute="width" constant="146" id="nAp-h0-9pb"/>
+                                </constraints>
                                 <state key="normal" title="End Round"/>
                                 <connections>
                                     <action selector="startNextRound:" destination="BYZ-38-t0r" eventType="touchUpInside" id="0BX-MR-lzd"/>
                                 </connections>
                             </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Order the events chronologically" textAlignment="center" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="q76-Dt-wwz">
-                                <frame key="frameInset" minX="16" minY="28" width="343" height="51"/>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="RZl-gA-mJm">
+                                <frame key="frameInset" minX="325" minY="262" width="34" height="50"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
-                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                <nil key="highlightedColor"/>
-                            </label>
+                                <color key="backgroundColor" red="1" green="0.5" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <state key="normal" image="down_half"/>
+                                <connections>
+                                    <action selector="changeLabels:" destination="BYZ-38-t0r" eventType="touchUpInside" id="ngG-A0-IP2"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" red="0.0" green="0.16470588235294117" blue="0.29019607843137252" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="zQc-4C-g20" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="ADN-rj-huo"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="bpM-Fk-eJy" secondAttribute="bottom" constant="54" id="cfC-pa-frU"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="zQc-4C-g20" secondAttribute="bottom" constant="20" id="h3F-KY-l7A"/>
+                            <constraint firstItem="zQc-4C-g20" firstAttribute="top" secondItem="LY0-Ec-461" secondAttribute="bottom" constant="8" id="mAx-xL-5uR"/>
+                            <constraint firstItem="LY0-Ec-461" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="mBx-S6-6rf"/>
+                            <constraint firstItem="q76-Dt-wwz" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="8" id="s07-dS-mKu"/>
+                            <constraint firstItem="q76-Dt-wwz" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="vRi-th-a0f"/>
+                            <constraint firstItem="bpM-Fk-eJy" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" constant="-11.5" id="vXP-OA-5zT"/>
+                        </constraints>
                     </view>
                     <connections>
                         <outlet property="eventButtonFour" destination="O4q-aY-Iwl" id="ToJ-xo-pCo"/>
@@ -319,6 +325,6 @@
         <image name="webview_bar" width="1333" height="167"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="3GX-QG-eAT"/>
+        <segue reference="pqa-yx-ex1"/>
     </inferredMetricsTieBreakers>
 </document>

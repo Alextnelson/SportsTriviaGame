@@ -152,7 +152,7 @@ class SportsTriviaViewController: UIViewController {
             nextRoundButton.isHidden = false
             nextRoundButton.setImage(nextRoundSuccessImage, for: .normal)
             correctLabels()
-            instructionLabel.text = "You are correct! Click on events to learn more"
+            instructionLabel.text = "You are correct! Click on events to learn more."
 
         } else {
             nextRoundButton.isHidden = false
