@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		5B2CA30F1D9D9CE100A644AD /* ScoreViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B2CA30E1D9D9CE100A644AD /* ScoreViewController.swift */; };
+		5B2CA3111D9DB15E00A644AD /* WebViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B2CA3101D9DB15E00A644AD /* WebViewController.swift */; };
 		5B40FCFD1D903A9800E023B9 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B40FCFC1D903A9800E023B9 /* AppDelegate.swift */; };
 		5B40FCFF1D903A9800E023B9 /* SportsTriviaViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B40FCFE1D903A9800E023B9 /* SportsTriviaViewController.swift */; };
 		5B40FD021D903A9800E023B9 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5B40FD001D903A9800E023B9 /* Main.storyboard */; };
@@ -36,6 +38,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		5B2CA30E1D9D9CE100A644AD /* ScoreViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ScoreViewController.swift; sourceTree = "<group>"; };
+		5B2CA3101D9DB15E00A644AD /* WebViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WebViewController.swift; sourceTree = "<group>"; };
 		5B40FCF91D903A9800E023B9 /* SportsTriviaGame.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SportsTriviaGame.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		5B40FCFC1D903A9800E023B9 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		5B40FCFE1D903A9800E023B9 /* SportsTriviaViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SportsTriviaViewController.swift; sourceTree = "<group>"; };
@@ -104,6 +108,8 @@
 				5B40FCFC1D903A9800E023B9 /* AppDelegate.swift */,
 				5B40FCFE1D903A9800E023B9 /* SportsTriviaViewController.swift */,
 				5B40FD2B1D903C0200E023B9 /* SportsTriviaQuestions.swift */,
+				5B2CA30E1D9D9CE100A644AD /* ScoreViewController.swift */,
+				5B2CA3101D9DB15E00A644AD /* WebViewController.swift */,
 				5B40FD001D903A9800E023B9 /* Main.storyboard */,
 				5B40FD2A1D903BDC00E023B9 /* Supporting Files */,
 			);
@@ -280,6 +286,8 @@
 				5B40FD2C1D903C0200E023B9 /* SportsTriviaQuestions.swift in Sources */,
 				5B40FCFF1D903A9800E023B9 /* SportsTriviaViewController.swift in Sources */,
 				5B40FCFD1D903A9800E023B9 /* AppDelegate.swift in Sources */,
+				5B2CA3111D9DB15E00A644AD /* WebViewController.swift in Sources */,
+				5B2CA30F1D9D9CE100A644AD /* ScoreViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

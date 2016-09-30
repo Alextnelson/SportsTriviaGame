@@ -7,10 +7,10 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--Sports Trivia View Controller-->
+        <!--SportsTriviaViewController-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="SportsTriviaViewController" customModule="SportsTriviaGame" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="SportsTriviaViewController" title="SportsTriviaViewController" id="BYZ-38-t0r" customClass="SportsTriviaViewController" customModule="SportsTriviaGame" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
                         <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
@@ -19,147 +19,162 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="PAA-Rh-MIK"/>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Order the events chronologically" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="q76-Dt-wwz">
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Shake to complete" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zQc-4C-g20">
+                            <stackView opaque="NO" contentMode="scaleToFill" fixedFrame="YES" axis="vertical" distribution="fillEqually" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="PAA-Rh-MIK">
+                                <frame key="frameInset" minX="164" minY="94" width="47" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </stackView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Shake to complete" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zQc-4C-g20">
+                                <frame key="frameInset" minX="116.5" minY="626.5" width="142.5" height="20.5"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" red="0.21960784310000001" green="0.56470588239999997" blue="0.70196078429999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="00:60" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LY0-Ec-461">
-                                <fontDescription key="fontDescription" type="system" pointSize="24"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="00:30" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LY0-Ec-461">
+                                <frame key="frameInset" minX="144.5" minY="579.5" width="86" height="38.5"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" weight="light" pointSize="32"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="wordWrap" translatesAutoresizingMaskIntoConstraints="NO" id="zQP-5Y-Hyh">
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="wordWrap" translatesAutoresizingMaskIntoConstraints="NO" id="zQP-5Y-Hyh">
+                                <frame key="frameInset" minX="16" minY="93.5" width="309" height="100"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="12"/>
                                 <state key="normal">
                                     <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
+                                <connections>
+                                    <action selector="presentWebViewOne:" destination="BYZ-38-t0r" eventType="touchUpInside" id="f0F-Mp-Z3h"/>
+                                    <segue destination="82V-yt-dIX" kind="presentation" identifier="webViewSegueOne" id="LJc-ir-v4u"/>
+                                </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="wordWrap" translatesAutoresizingMaskIntoConstraints="NO" id="mg1-uc-USn">
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="wordWrap" translatesAutoresizingMaskIntoConstraints="NO" id="mg1-uc-USn">
+                                <frame key="frameInset" minX="16" minY="336" width="309" height="99"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="99" id="l5k-7H-8Ae"/>
-                                </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="12"/>
                                 <state key="normal">
                                     <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
+                                <connections>
+                                    <action selector="presentWebViewThree:" destination="BYZ-38-t0r" eventType="touchUpInside" id="HOG-dw-imR"/>
+                                    <segue destination="82V-yt-dIX" kind="presentation" identifier="webViewSegueThree" id="pqa-yx-ex1"/>
+                                </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="TII-Lt-0Yt">
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="TII-Lt-0Yt">
+                                <frame key="frameInset" minX="325" minY="93.5" width="34" height="100"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" red="1" green="0.5" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <state key="normal" image="down_full"/>
                                 <connections>
                                     <action selector="changeLabels:" destination="BYZ-38-t0r" eventType="touchUpInside" id="PZV-ex-gik"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Rek-Sz-omp">
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Rek-Sz-omp">
+                                <frame key="frameInset" minX="325" minY="211.5" width="34" height="50.5"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" red="1" green="0.5" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <state key="normal" image="up_half"/>
                                 <connections>
                                     <action selector="changeLabels:" destination="BYZ-38-t0r" eventType="touchUpInside" id="lrz-wa-7eT"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="RZl-gA-mJm">
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="RZl-gA-mJm">
+                                <frame key="frameInset" minX="325" minY="262" width="34" height="49"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" red="1" green="0.5" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <state key="normal" image="down_half"/>
                                 <connections>
                                     <action selector="changeLabels:" destination="BYZ-38-t0r" eventType="touchUpInside" id="ngG-A0-IP2"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="wordWrap" translatesAutoresizingMaskIntoConstraints="NO" id="Tss-Io-YGW">
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="wordWrap" translatesAutoresizingMaskIntoConstraints="NO" id="Tss-Io-YGW">
+                                <frame key="frameInset" minX="16" minY="211.5" width="309" height="99.5"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="12"/>
                                 <state key="normal">
                                     <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
+                                <connections>
+                                    <action selector="presentWebViewTwo:" destination="BYZ-38-t0r" eventType="touchUpInside" id="uva-iY-307"/>
+                                    <segue destination="82V-yt-dIX" kind="presentation" identifier="webViewSegueTwo" id="m9F-aB-Fge"/>
+                                </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="SfN-2c-eZ6">
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="SfN-2c-eZ6">
+                                <frame key="frameInset" minX="325" minY="336" width="34" height="50"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" red="1" green="0.5" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="50" id="Tix-OL-aa4"/>
-                                </constraints>
                                 <state key="normal" image="up_half"/>
                                 <connections>
                                     <action selector="changeLabels:" destination="BYZ-38-t0r" eventType="touchUpInside" id="au0-99-ERx"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="REQ-3z-pTM">
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="REQ-3z-pTM">
+                                <frame key="frameInset" minX="325" minY="386" width="34" height="49"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" red="1" green="0.5" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <state key="normal" image="down_half"/>
                                 <connections>
                                     <action selector="changeLabels:" destination="BYZ-38-t0r" eventType="touchUpInside" id="5MI-HN-6En"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="wordWrap" translatesAutoresizingMaskIntoConstraints="NO" id="O4q-aY-Iwl">
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="wordWrap" translatesAutoresizingMaskIntoConstraints="NO" id="O4q-aY-Iwl">
+                                <frame key="frameInset" minX="16" minY="459" width="309" height="100"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="12"/>
                                 <state key="normal">
                                     <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 </state>
+                                <connections>
+                                    <action selector="presentWebViewFour:" destination="BYZ-38-t0r" eventType="touchUpInside" id="RHH-lP-1iX"/>
+                                    <segue destination="82V-yt-dIX" kind="presentation" identifier="webViewSegueFour" id="3GX-QG-eAT"/>
+                                </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="oCD-xI-15O">
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="oCD-xI-15O">
+                                <frame key="frameInset" minX="325" minY="459" width="34" height="100"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" red="1" green="0.5" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <state key="normal" image="up_full"/>
                                 <connections>
                                     <action selector="changeLabels:" destination="BYZ-38-t0r" eventType="touchUpInside" id="sXr-lS-dH0"/>
                                 </connections>
                             </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="5" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="EUL-Hd-VjG">
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="82" id="JeC-z4-Otd"/>
-                                    <constraint firstAttribute="width" constant="281" id="mYm-tv-VNQ"/>
-                                </constraints>
-                                <string key="text"> France defeats favored Brazil 3-0 to win the FIFA World Cup at Stade de France in Saint Denis to win the country’s first-ever World Cup title.</string>
-                                <fontDescription key="fontDescription" type="system" pointSize="12"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="5" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tgj-NO-LIz">
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="281" id="KXN-xI-1Ko"/>
-                                    <constraint firstAttribute="height" constant="82" id="adG-Cd-aGb"/>
-                                </constraints>
-                                <string key="text"> France defeats favored Brazil 3-0 to win the FIFA World Cup at Stade de France in Saint Denis to win the country’s first-ever World Cup title.</string>
-                                <fontDescription key="fontDescription" type="system" pointSize="12"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="5" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pwS-70-TaJ">
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="281" id="2FH-CK-cVN"/>
-                                    <constraint firstAttribute="height" constant="82" id="D5x-NI-aSq"/>
-                                </constraints>
-                                <string key="text"> France defeats favored Brazil 3-0 to win the FIFA World Cup at Stade de France in Saint Denis to win the country’s first-ever World Cup title.</string>
-                                <fontDescription key="fontDescription" type="system" pointSize="12"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="5" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hiJ-RM-1tc">
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="281" id="6JT-5X-VZw"/>
-                                    <constraint firstAttribute="height" constant="82" id="WvA-dJ-Veb"/>
-                                </constraints>
-                                <string key="text"> France defeats favored Brazil 3-0 to win the FIFA World Cup at Stade de France in Saint Denis to win the country’s first-ever World Cup title.</string>
-                                <fontDescription key="fontDescription" type="system" pointSize="12"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Xu5-ha-bF5">
-                                <frame key="frameInset" minX="267" minY="587" width="69" height="30"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="5" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="EUL-Hd-VjG">
+                                <frame key="frameInset" minX="30" minY="102.5" width="281" height="82"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" red="0.5" green="0.0" blue="0.5" alpha="1" colorSpace="calibratedRGB"/>
-                                <state key="normal" title="Test"/>
-                                <connections>
-                                    <action selector="testCheckAnswer:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Sqm-OR-myU"/>
-                                </connections>
-                            </button>
+                                <string key="text"> France defeats favored Brazil 3-0 to win the FIFA World Cup at Stade de France in Saint Denis to win the country’s first-ever World Cup title.</string>
+                                <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                <color key="textColor" red="0.12549019607843137" green="0.37254901960784315" blue="0.49019607843137253" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="5" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tgj-NO-LIz">
+                                <frame key="frameInset" minX="31" minY="220.5" width="281" height="82"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <string key="text"> France defeats favored Brazil 3-0 to win the FIFA World Cup at Stade de France in Saint Denis to win the country’s first-ever World Cup title.</string>
+                                <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                <color key="textColor" red="0.12549019610000001" green="0.37254901959999998" blue="0.49019607840000001" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="5" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pwS-70-TaJ">
+                                <frame key="frameInset" minX="31" minY="344.5" width="281" height="82"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <string key="text"> France defeats favored Brazil 3-0 to win the FIFA World Cup at Stade de France in Saint Denis to win the country’s first-ever World Cup title.</string>
+                                <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                <color key="textColor" red="0.12549019610000001" green="0.37254901959999998" blue="0.49019607840000001" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="5" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hiJ-RM-1tc">
+                                <frame key="frameInset" minX="36" minY="468" width="281" height="82"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <string key="text"> France defeats favored Brazil 3-0 to win the FIFA World Cup at Stade de France in Saint Denis to win the country’s first-ever World Cup title.</string>
+                                <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                <color key="textColor" red="0.12549019607843137" green="0.37254901960784315" blue="0.49019607843137253" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bpM-Fk-eJy">
                                 <frame key="frameInset" minX="113" minY="584" width="146" height="34"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -168,66 +183,15 @@
                                     <action selector="startNextRound:" destination="BYZ-38-t0r" eventType="touchUpInside" id="0BX-MR-lzd"/>
                                 </connections>
                             </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Order the events chronologically" textAlignment="center" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="q76-Dt-wwz">
+                                <frame key="frameInset" minX="16" minY="28" width="343" height="51"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" red="0.0" green="0.16470588235294117" blue="0.29019607843137252" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                        <constraints>
-                            <constraint firstItem="zQP-5Y-Hyh" firstAttribute="centerX" secondItem="EUL-Hd-VjG" secondAttribute="centerX" id="0Ju-jC-JcI"/>
-                            <constraint firstAttribute="bottom" secondItem="mg1-uc-USn" secondAttribute="bottom" constant="232" id="0pq-YM-ibP"/>
-                            <constraint firstItem="zQP-5Y-Hyh" firstAttribute="trailing" secondItem="Tss-Io-YGW" secondAttribute="trailing" id="1Ik-i9-VEe"/>
-                            <constraint firstItem="SfN-2c-eZ6" firstAttribute="leading" secondItem="oCD-xI-15O" secondAttribute="leading" id="3WG-2U-Fbf"/>
-                            <constraint firstItem="RZl-gA-mJm" firstAttribute="top" secondItem="Rek-Sz-omp" secondAttribute="bottom" id="6tW-jq-2cC"/>
-                            <constraint firstItem="mg1-uc-USn" firstAttribute="bottom" secondItem="REQ-3z-pTM" secondAttribute="bottom" id="7ar-p7-6k9"/>
-                            <constraint firstItem="zQP-5Y-Hyh" firstAttribute="bottom" secondItem="TII-Lt-0Yt" secondAttribute="bottom" id="8Xj-DA-BAa"/>
-                            <constraint firstItem="O4q-aY-Iwl" firstAttribute="top" secondItem="mg1-uc-USn" secondAttribute="bottom" constant="24" id="9pM-c6-HFJ"/>
-                            <constraint firstItem="Rek-Sz-omp" firstAttribute="top" secondItem="Tss-Io-YGW" secondAttribute="top" id="AVA-PS-h8y"/>
-                            <constraint firstItem="TII-Lt-0Yt" firstAttribute="leading" secondItem="EUL-Hd-VjG" secondAttribute="trailing" constant="14" id="Bm1-N1-vZB"/>
-                            <constraint firstItem="EUL-Hd-VjG" firstAttribute="leading" secondItem="zQP-5Y-Hyh" secondAttribute="trailing" constant="-295" id="DRM-et-ZA6"/>
-                            <constraint firstItem="PAA-Rh-MIK" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="164" id="EMO-Dr-8Ee"/>
-                            <constraint firstItem="zQc-4C-g20" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Hk2-2I-WlW"/>
-                            <constraint firstItem="oCD-xI-15O" firstAttribute="leading" secondItem="hiJ-RM-1tc" secondAttribute="trailing" constant="8" symbolic="YES" id="I7N-lA-hGP"/>
-                            <constraint firstItem="zQP-5Y-Hyh" firstAttribute="leading" secondItem="Tss-Io-YGW" secondAttribute="leading" id="IL7-N1-9WQ"/>
-                            <constraint firstItem="zQP-5Y-Hyh" firstAttribute="top" secondItem="TII-Lt-0Yt" secondAttribute="top" id="JVP-Ng-VoG"/>
-                            <constraint firstItem="EUL-Hd-VjG" firstAttribute="top" secondItem="zQP-5Y-Hyh" secondAttribute="bottom" constant="-91" id="Jma-vq-3aQ"/>
-                            <constraint firstItem="SfN-2c-eZ6" firstAttribute="top" secondItem="RZl-gA-mJm" secondAttribute="bottom" constant="25" id="KJ6-5g-16Z"/>
-                            <constraint firstItem="hiJ-RM-1tc" firstAttribute="centerY" secondItem="oCD-xI-15O" secondAttribute="centerY" id="O9Q-9h-oUY"/>
-                            <constraint firstItem="SfN-2c-eZ6" firstAttribute="trailing" secondItem="TII-Lt-0Yt" secondAttribute="trailing" id="OLm-gJ-dFE"/>
-                            <constraint firstItem="hiJ-RM-1tc" firstAttribute="top" secondItem="mg1-uc-USn" secondAttribute="bottom" constant="33" id="OWO-d6-Zgu"/>
-                            <constraint firstItem="SfN-2c-eZ6" firstAttribute="leading" secondItem="RZl-gA-mJm" secondAttribute="leading" id="Oti-hD-wzP"/>
-                            <constraint firstItem="pwS-70-TaJ" firstAttribute="leading" secondItem="tgj-NO-LIz" secondAttribute="leading" id="Q1w-ed-mSh"/>
-                            <constraint firstItem="pwS-70-TaJ" firstAttribute="centerY" secondItem="mg1-uc-USn" secondAttribute="centerY" id="RH2-sc-y8d"/>
-                            <constraint firstItem="tgj-NO-LIz" firstAttribute="centerY" secondItem="Tss-Io-YGW" secondAttribute="centerY" id="Rf2-QS-COp"/>
-                            <constraint firstItem="zQc-4C-g20" firstAttribute="top" secondItem="LY0-Ec-461" secondAttribute="bottom" constant="8.5" id="UIL-ZB-6T3"/>
-                            <constraint firstItem="mg1-uc-USn" firstAttribute="top" secondItem="Tss-Io-YGW" secondAttribute="bottom" constant="25" id="Vvv-HW-gaV"/>
-                            <constraint firstItem="zQP-5Y-Hyh" firstAttribute="trailing" secondItem="mg1-uc-USn" secondAttribute="trailing" id="Wck-AV-Vfn"/>
-                            <constraint firstItem="hiJ-RM-1tc" firstAttribute="centerY" secondItem="O4q-aY-Iwl" secondAttribute="centerY" id="Wqt-MQ-2Bt"/>
-                            <constraint firstItem="LY0-Ec-461" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="YMc-b7-u53"/>
-                            <constraint firstItem="zQP-5Y-Hyh" firstAttribute="leading" secondItem="mg1-uc-USn" secondAttribute="leading" id="YqE-nh-ndC"/>
-                            <constraint firstItem="Tss-Io-YGW" firstAttribute="top" secondItem="zQP-5Y-Hyh" secondAttribute="bottom" constant="18" id="Zgj-CP-v9T"/>
-                            <constraint firstItem="SfN-2c-eZ6" firstAttribute="trailing" secondItem="oCD-xI-15O" secondAttribute="trailing" id="a8z-6k-h9X"/>
-                            <constraint firstItem="zQP-5Y-Hyh" firstAttribute="leading" secondItem="O4q-aY-Iwl" secondAttribute="leading" id="b6S-hA-bTL"/>
-                            <constraint firstItem="SfN-2c-eZ6" firstAttribute="trailing" secondItem="8bC-Xf-vdC" secondAttribute="trailingMargin" id="bMh-tm-RUB"/>
-                            <constraint firstItem="SfN-2c-eZ6" firstAttribute="leading" secondItem="Rek-Sz-omp" secondAttribute="leading" id="bto-Wc-WnP"/>
-                            <constraint firstItem="oCD-xI-15O" firstAttribute="top" secondItem="SfN-2c-eZ6" secondAttribute="bottom" constant="73" id="dJO-0q-Lch"/>
-                            <constraint firstItem="SfN-2c-eZ6" firstAttribute="top" secondItem="Rek-Sz-omp" secondAttribute="bottom" constant="74" id="dQT-zj-yi0"/>
-                            <constraint firstItem="REQ-3z-pTM" firstAttribute="leading" secondItem="mg1-uc-USn" secondAttribute="trailing" id="dal-Fq-NLl"/>
-                            <constraint firstItem="SfN-2c-eZ6" firstAttribute="trailing" secondItem="RZl-gA-mJm" secondAttribute="trailing" id="fYp-UH-azh"/>
-                            <constraint firstItem="zQP-5Y-Hyh" firstAttribute="top" secondItem="q76-Dt-wwz" secondAttribute="bottom" constant="18" id="g0r-yG-hUw"/>
-                            <constraint firstItem="REQ-3z-pTM" firstAttribute="top" secondItem="SfN-2c-eZ6" secondAttribute="bottom" id="geu-Zg-nfz"/>
-                            <constraint firstItem="SfN-2c-eZ6" firstAttribute="leading" secondItem="REQ-3z-pTM" secondAttribute="leading" id="i2S-oa-QyO"/>
-                            <constraint firstItem="q76-Dt-wwz" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="iIj-n4-1hP"/>
-                            <constraint firstItem="zQP-5Y-Hyh" firstAttribute="trailing" secondItem="O4q-aY-Iwl" secondAttribute="trailing" id="kSB-k8-11W"/>
-                            <constraint firstItem="SfN-2c-eZ6" firstAttribute="trailing" secondItem="Rek-Sz-omp" secondAttribute="trailing" id="nrP-Ts-ZDZ"/>
-                            <constraint firstItem="q76-Dt-wwz" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="35" id="oVp-hY-nOw"/>
-                            <constraint firstItem="zQP-5Y-Hyh" firstAttribute="top" secondItem="PAA-Rh-MIK" secondAttribute="top" id="oyc-Of-f38"/>
-                            <constraint firstItem="SfN-2c-eZ6" firstAttribute="trailing" secondItem="REQ-3z-pTM" secondAttribute="trailing" id="pzj-3d-nz7"/>
-                            <constraint firstItem="zQP-5Y-Hyh" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="q6m-6o-L2a"/>
-                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="zQc-4C-g20" secondAttribute="bottom" constant="20" id="qwY-uV-gGk"/>
-                            <constraint firstItem="Tss-Io-YGW" firstAttribute="top" secondItem="PAA-Rh-MIK" secondAttribute="bottom" constant="88" id="rid-Gn-xZu"/>
-                            <constraint firstItem="pwS-70-TaJ" firstAttribute="trailing" secondItem="q76-Dt-wwz" secondAttribute="trailing" id="smz-5l-Us6"/>
-                            <constraint firstItem="zQP-5Y-Hyh" firstAttribute="centerY" secondItem="EUL-Hd-VjG" secondAttribute="centerY" id="tIN-s5-dzs"/>
-                            <constraint firstItem="PAA-Rh-MIK" firstAttribute="centerX" secondItem="q76-Dt-wwz" secondAttribute="centerX" id="yMS-3a-FiW"/>
-                            <constraint firstItem="mg1-uc-USn" firstAttribute="top" secondItem="SfN-2c-eZ6" secondAttribute="top" id="zIA-2g-aQb"/>
-                        </constraints>
                     </view>
                     <connections>
                         <outlet property="eventButtonFour" destination="O4q-aY-Iwl" id="ToJ-xo-pCo"/>
@@ -254,10 +218,10 @@
             </objects>
             <point key="canvasLocation" x="135.19999999999999" y="130.88455772113943"/>
         </scene>
-        <!--View Controller-->
+        <!--ScoreViewController-->
         <scene sceneID="iJy-QG-RUV">
             <objects>
-                <viewController id="eCB-7H-aDu" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="ScoreViewController" title="ScoreViewController" id="eCB-7H-aDu" customClass="ScoreViewController" customModule="SportsTriviaGame" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="q1K-EZ-JrN"/>
                         <viewControllerLayoutGuide type="bottom" id="sGD-IJ-6ad"/>
@@ -266,32 +230,47 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Your Score" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kaC-qv-nhO">
-                                <frame key="frameInset" minX="145" minY="198" width="84" height="21"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Your Score" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kaC-qv-nhO">
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" red="0.2196078431372549" green="0.56470588235294117" blue="0.70196078431372544" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="4/6" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="S5l-mn-SPW">
-                                <frame key="frameInset" minX="149" minY="227" width="76" height="60"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="4/6" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="S5l-mn-SPW">
                                 <fontDescription key="fontDescription" type="system" pointSize="50"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6eK-ja-prR">
+                                <state key="normal" image="play_again"/>
+                                <connections>
+                                    <action selector="playAgain:" destination="eCB-7H-aDu" eventType="touchUpInside" id="0fA-CU-Slg"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" red="0.0" green="0.1647058824" blue="0.2901960784" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="6eK-ja-prR" firstAttribute="top" secondItem="S5l-mn-SPW" secondAttribute="bottom" constant="27" id="6vf-zR-JfJ"/>
+                            <constraint firstItem="S5l-mn-SPW" firstAttribute="centerX" secondItem="yvw-g3-mj1" secondAttribute="centerX" id="BLM-iK-n3F"/>
+                            <constraint firstItem="S5l-mn-SPW" firstAttribute="top" secondItem="kaC-qv-nhO" secondAttribute="bottom" constant="8" id="IJR-EF-ZhK"/>
+                            <constraint firstItem="S5l-mn-SPW" firstAttribute="centerY" secondItem="yvw-g3-mj1" secondAttribute="centerY" id="Ly0-qJ-dB0"/>
+                            <constraint firstItem="kaC-qv-nhO" firstAttribute="centerX" secondItem="yvw-g3-mj1" secondAttribute="centerX" id="Ywc-br-YTr"/>
+                            <constraint firstItem="sGD-IJ-6ad" firstAttribute="top" secondItem="6eK-ja-prR" secondAttribute="bottom" constant="228" id="bHo-ND-zTQ"/>
+                            <constraint firstItem="6eK-ja-prR" firstAttribute="centerX" secondItem="S5l-mn-SPW" secondAttribute="centerX" id="shO-ba-fxZ"/>
+                            <constraint firstItem="6eK-ja-prR" firstAttribute="leading" secondItem="yvw-g3-mj1" secondAttribute="leadingMargin" constant="93" id="w66-om-eCy"/>
+                        </constraints>
                     </view>
+                    <connections>
+                        <outlet property="scoreLabel" destination="S5l-mn-SPW" id="JE4-bl-I40"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Agi-jb-M8E" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="137" y="794"/>
+            <point key="canvasLocation" x="135" y="879"/>
         </scene>
-        <!--View Controller-->
+        <!--Web View Controller-->
         <scene sceneID="1ds-GC-9Zr">
             <objects>
-                <viewController id="82V-yt-dIX" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="WebViewController" id="82V-yt-dIX" customClass="WebViewController" customModule="SportsTriviaGame" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="rXE-8w-wGZ"/>
                         <viewControllerLayoutGuide type="bottom" id="pMe-g7-d57"/>
@@ -302,6 +281,9 @@
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="64z-qJ-di9">
                                 <state key="normal" title="Button" image="webview_bar"/>
+                                <connections>
+                                    <action selector="closeWebView:" destination="82V-yt-dIX" eventType="touchUpInside" id="fdC-ph-kgT"/>
+                                </connections>
                             </button>
                             <webView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="DZy-nZ-niF">
                                 <color key="backgroundColor" red="0.36078431370000003" green="0.38823529410000002" blue="0.4039215686" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -319,17 +301,24 @@
                             <constraint firstItem="64z-qJ-di9" firstAttribute="leading" secondItem="DZy-nZ-niF" secondAttribute="leading" id="uQi-1l-CWG"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="webView" destination="DZy-nZ-niF" id="rMz-07-tbI"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="7fA-IY-v0f" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="837.60000000000002" y="131.78410794602701"/>
+            <point key="canvasLocation" x="959" y="131"/>
         </scene>
     </scenes>
     <resources>
         <image name="down_full" width="158" height="457"/>
         <image name="down_half" width="158" height="229"/>
+        <image name="play_again" width="450" height="142"/>
         <image name="up_full" width="158" height="457"/>
         <image name="up_half" width="158" height="229"/>
         <image name="webview_bar" width="1333" height="167"/>
     </resources>
+    <inferredMetricsTieBreakers>
+        <segue reference="3GX-QG-eAT"/>
+    </inferredMetricsTieBreakers>
 </document>

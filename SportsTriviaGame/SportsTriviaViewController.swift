@@ -37,7 +37,6 @@ class SportsTriviaViewController: UIViewController {
 
     @IBOutlet weak var nextRoundButton: UIButton!
 
-
     var allSportsTrivia: GameOfSportsTrivia
     var roundOfSportsTrivia = GameOfSportsTrivia(sportsTrivia: [])
     var sortedSportsTrivia = GameOfSportsTrivia(sportsTrivia: [])
@@ -46,11 +45,11 @@ class SportsTriviaViewController: UIViewController {
 
     let roundsPerGame = 6
     let eventsPerRound = 4
-    var roundPlayed = 0
+    var roundsPlayed = 0
     var score = 0
     var correctAnswers = 0
     
-    var seconds = 60
+    var seconds = 30
     var timer = Timer()
     var timerRunning = false
 
@@ -76,15 +75,30 @@ class SportsTriviaViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         startNewRound()
+
     }
 
     func startNewRound() {
-        roundOfSportsTrivia.sportsTriviaOptions.removeAll()
-        createSportsTriviaOptions(triviaRound: allSportsTrivia)
-        setUpEventLabels(trivia: roundOfSportsTrivia)
-        beginTimer()
-        nextRoundButton.isHidden = true
+        if roundsPlayed < roundsPerGame {
+            disableEventButtonsEnableSwitchButtons()
+            resetTimer()
+            shakeToCompleteInstructions.isHidden = false
+            roundOfSportsTrivia.sportsTriviaOptions.removeAll()
+            createSportsTriviaOptions(triviaRound: allSportsTrivia)
+            setUpEventLabels(trivia: roundOfSportsTrivia)
+            beginTimer()
+            nextRoundButton.isHidden = true
+            instructionLabel.text = "Order the events chronologically"
+        } else {
+            if let scoreViewController = storyboard?.instantiateViewController(withIdentifier: "ScoreViewController") as? ScoreViewController {
+                present(scoreViewController, animated: true, completion: nil)
+                scoreViewController.scoreLabel.text = "\(correctAnswers)/\(roundsPerGame)"
+            }
+            resetGame()
+        }
+
     }
+
 
     @IBAction func changeLabels(_ sender: UIButton) {
         switch sender {
@@ -95,11 +109,6 @@ class SportsTriviaViewController: UIViewController {
         }
 
     }
-
-
-
-
-    // MARK: Helper methods
 
     func setUpEventLabels(trivia: GameOfSportsTrivia) {
         var triviaTitles = [String]()
@@ -131,33 +140,31 @@ class SportsTriviaViewController: UIViewController {
         return trivia.sportsTriviaOptions.sorted { $0.year < $1.year }
     }
 
-
-    @IBAction func testCheckAnswer(_ sender: AnyObject) {
-        checkAnswer()
-    }
-
     func checkAnswer() {
+        roundsPlayed += 1
+        timer.invalidate()
         sortedSportsTrivia.sportsTriviaOptions = sortedTrivia(trivia: roundOfSportsTrivia)
+        enableEventButtonsDisableSwitchButtons()
+        shakeToCompleteInstructions.isHidden = true
+
         if eventLabelOne.text == sortedSportsTrivia.sportsTriviaOptions[0].description && eventLabelTwo.text == sortedSportsTrivia.sportsTriviaOptions[1].description && eventLabelThree.text == sortedSportsTrivia.sportsTriviaOptions[2].description && eventLabelFour.text == sortedSportsTrivia.sportsTriviaOptions[3].description {
             correctAnswers += 1
-
             nextRoundButton.isHidden = false
             nextRoundButton.setImage(nextRoundSuccessImage, for: .normal)
-            
+            correctLabels()
+            instructionLabel.text = "You are correct! Click on events to learn more"
+
         } else {
             nextRoundButton.isHidden = false
             nextRoundButton.setImage(nextRoundFailImage, for: .normal)
+            correctLabels()
+            instructionLabel.text = "Sorry, that is incorrect. Click on events to learn more."
         }
     }
 
-
     @IBAction func startNextRound(_ sender: UIButton) {
-        if roundPlayed < roundsPerGame {
-            resetTimer()
-            startNewRound()
-        } else {
-            print("Stuff")
-        }
+        startNewRound()
+        disableEventButtonsEnableSwitchButtons()
     }
 
 
@@ -166,6 +173,85 @@ class SportsTriviaViewController: UIViewController {
             checkAnswer()
         }
     }
+
+    @IBAction func presentWebViewOne(_ sender: AnyObject) {
+        performSegue(withIdentifier: "webViewSegueOne", sender: self)
+    }
+    
+    @IBAction func presentWebViewTwo(_ sender: AnyObject) {
+        performSegue(withIdentifier: "webViewSegueTwo", sender: self)
+    }
+
+    @IBAction func presentWebViewThree(_ sender: AnyObject) {
+        performSegue(withIdentifier: "webViewSegueThree", sender: self)
+    }
+
+    @IBAction func presentWebViewFour(_ sender: AnyObject) {
+        performSegue(withIdentifier: "webViewSegueFour", sender: self)
+    }
+    
+
+
+    // MARK: Helper methods
+
+    func enableLearnMoreButtons() {
+        print("Something")
+    }
+
+    func resetGame() {
+        correctAnswers = 0
+        roundsPlayed = 0
+        startNewRound()
+    }
+
+    func disableEventButtonsEnableSwitchButtons() {
+        eventButtonOne.isEnabled = false
+        eventButtonTwo.isEnabled = false
+        eventButtonThree.isEnabled = false
+        eventButtonFour.isEnabled = false
+
+        fullDownButton.isEnabled = true
+        halfUpButtonOne.isEnabled = true
+        halfDownButtonOne.isEnabled = true
+        halfUpButtonTwo.isEnabled = true
+        halfDownButtonTwo.isEnabled = true
+        fullUpButton.isEnabled = true
+    }
+
+    func enableEventButtonsDisableSwitchButtons() {
+        eventButtonOne.isEnabled = true
+        eventButtonTwo.isEnabled = true
+        eventButtonThree.isEnabled = true
+        eventButtonFour.isEnabled = true
+
+        fullDownButton.isEnabled = false
+        halfUpButtonOne.isEnabled = false
+        halfDownButtonOne.isEnabled = false
+        halfUpButtonTwo.isEnabled = false
+        halfDownButtonTwo.isEnabled = false
+        fullUpButton.isEnabled = false
+
+    }
+
+    func correctLabels() {
+        eventLabelOne.text = sortedSportsTrivia.sportsTriviaOptions[0].description
+        eventLabelTwo.text = sortedSportsTrivia.sportsTriviaOptions[1].description
+        eventLabelThree.text = sortedSportsTrivia.sportsTriviaOptions[2].description
+        eventLabelFour.text = sortedSportsTrivia.sportsTriviaOptions[3].description
+    }
+
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if segue.identifier == "webViewSegueOne", let wvc = segue.destination as? WebViewController {
+            wvc.url = sortedSportsTrivia.sportsTriviaOptions[0].url
+        } else if segue.identifier == "webViewSegueTwo", let wvc = segue.destination as? WebViewController {
+            wvc.url = sortedSportsTrivia.sportsTriviaOptions[1].url
+        } else if segue.identifier == "webViewSegueThree", let wvc = segue.destination as? WebViewController {
+            wvc.url = sortedSportsTrivia.sportsTriviaOptions[2].url
+        } else if segue.identifier == "webViewSegueFour", let wvc = segue.destination as? WebViewController {
+            wvc.url = sortedSportsTrivia.sportsTriviaOptions[3].url
+        }
+    }
+
 
 // MARK: Timer methods
 
@@ -185,25 +271,29 @@ class SportsTriviaViewController: UIViewController {
         }
 
         if seconds == 0 {
-            timer.invalidate()
-            roundPlayed += 1
+            roundsPlayed += 1
             instructionLabel.text = "Time's Up!"
             checkAnswer()
-            resetTimer()
-            enableLearnMoreButtons()
         }
     }
 
     func resetTimer() {
-        seconds = 60
+        seconds = 30
         timerLabel.text = "00:\(seconds)"
         timerRunning = false
     }
-
-    func enableLearnMoreButtons() {
-        print("Something")
-    }
-
-
 }
+
+//            switch UIButton() {
+//            case eventButtonOne: wvc.url = sortedSportsTrivia.sportsTriviaOptions[0].url
+//            case eventButtonTwo: wvc.url = sortedSportsTrivia.sportsTriviaOptions[1].url
+//            case eventButtonThree: wvc.url = sortedSportsTrivia.sportsTriviaOptions[2].url
+//            case eventButtonFour: wvc.url = sortedSportsTrivia.sportsTriviaOptions[3].url
+//            default: break
+//            }
+
+//@IBAction func learnMoreAboutEvents(_ sender: UIButton) {
+//    performSegue(withIdentifier: "webViewSegue", sender: self)
+//}
+
 

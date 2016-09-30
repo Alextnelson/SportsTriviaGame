@@ -8,7 +8,7 @@
 		<key>year</key>
 		<string>1908</string>
 		<key>url</key>
-		<string>https://en.wikipedia.org/wiki/1908_World_Series</string>
+		<string>http://en.wikipedia.org/wiki/1908_World_Series</string>
 	</dict>
 	<dict>
 		<key>description</key>
@@ -24,7 +24,7 @@
 		<key>year</key>
 		<string>1962</string>
 		<key>url</key>
-		<string>https://en.wikipedia.org/wiki/Wilt_Chamberlain%27s_100-point_game</string>
+		<string>http://en.wikipedia.org/wiki/Wilt_Chamberlain%27s_100-point_game</string>
 	</dict>
 	<dict>
 		<key>description</key>
@@ -32,7 +32,7 @@
 		<key>year</key>
 		<string>1976</string>
 		<key>url</key>
-		<string>https://en.wikipedia.org/wiki/Perfect_10_(gymnastics)</string>
+		<string>http://en.wikipedia.org/wiki/Perfect_10_(gymnastics)</string>
 	</dict>
 	<dict>
 		<key>description</key>
@@ -48,7 +48,7 @@
 		<key>year</key>
 		<string>1919</string>
 		<key>url</key>
-		<string>https://en.wikipedia.org/wiki/Sir_Barton</string>
+		<string>http://en.wikipedia.org/wiki/Sir_Barton</string>
 	</dict>
 	<dict>
 		<key>description</key>
@@ -64,7 +64,7 @@
 		<key>year</key>
 		<string>1954</string>
 		<key>url</key>
-		<string>https://en.wikipedia.org/wiki/Shot_clock</string>
+		<string>http://en.wikipedia.org/wiki/Shot_clock</string>
 	</dict>
 	<dict>
 		<key>description</key>
@@ -156,7 +156,7 @@
 	</dict>
 	<dict>
 		<key>description</key>
-		<string> France defeats favored Brazil 3-0 to win the FIFA World Cup at Stade de France in Saint Denis to win the country’s first-ever World Cup title.</string>
+		<string>France defeats favored Brazil 3-0 to win the FIFA World Cup at Stade de France in Saint Denis to win the country’s first-ever World Cup title.</string>
 		<key>year</key>
 		<string>1998</string>
 		<key>url</key>
