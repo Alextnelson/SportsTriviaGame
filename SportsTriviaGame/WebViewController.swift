@@ -20,6 +20,10 @@ class WebViewController: UIViewController {
             webView.loadRequest(request as URLRequest)
     }
 
+    override var prefersStatusBarHidden: Bool {
+        return true
+    }
+
     @IBAction func closeWebView(_ sender: AnyObject) {
         self.dismiss(animated: true, completion: nil)
     }

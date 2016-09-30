@@ -16,7 +16,7 @@
                         <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <stackView opaque="NO" contentMode="scaleToFill" fixedFrame="YES" axis="vertical" distribution="fillEqually" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="PAA-Rh-MIK">
@@ -233,7 +233,7 @@
                         <viewControllerLayoutGuide type="bottom" id="sGD-IJ-6ad"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="yvw-g3-mj1">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Your Score" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kaC-qv-nhO">
@@ -282,10 +282,13 @@
                         <viewControllerLayoutGuide type="bottom" id="pMe-g7-d57"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="LJU-5c-RA2">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="64z-qJ-di9">
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="kgC-kg-boH"/>
+                                </constraints>
                                 <state key="normal" title="Button" image="webview_bar"/>
                                 <connections>
                                     <action selector="closeWebView:" destination="82V-yt-dIX" eventType="touchUpInside" id="fdC-ph-kgT"/>
@@ -303,7 +306,6 @@
                             <constraint firstItem="64z-qJ-di9" firstAttribute="top" secondItem="LJU-5c-RA2" secondAttribute="top" id="S6V-9l-doc"/>
                             <constraint firstAttribute="trailing" secondItem="DZy-nZ-niF" secondAttribute="trailing" id="aDm-SO-XJd"/>
                             <constraint firstItem="DZy-nZ-niF" firstAttribute="top" secondItem="rXE-8w-wGZ" secondAttribute="bottom" constant="20" id="dlv-iY-2MB"/>
-                            <constraint firstItem="pMe-g7-d57" firstAttribute="top" secondItem="64z-qJ-di9" secondAttribute="bottom" constant="626" id="fQw-oH-XT1"/>
                             <constraint firstItem="64z-qJ-di9" firstAttribute="leading" secondItem="DZy-nZ-niF" secondAttribute="leading" id="uQi-1l-CWG"/>
                         </constraints>
                     </view>
@@ -313,7 +315,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="7fA-IY-v0f" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="959" y="131"/>
+            <point key="canvasLocation" x="957.97101449275374" y="130.43478260869566"/>
         </scene>
     </scenes>
     <resources>
